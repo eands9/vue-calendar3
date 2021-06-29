@@ -1,6 +1,17 @@
 type Todo @model @auth (rules: [
+  { allow: public, queries: [list, get]} ])
+{
+  id: ID!
+  name: String!
+  description: String
+}
+
+
+type TodoOpen @model @auth(rules: [
   { allow: groups, groups: ["Admins"], mutations: [create, update, delete], queries: [list, get] },
-  { allow: owner } ])
+  { allow: owner, operations: [read, create, delete, update] }, 
+  { allow: public, provider: iam, operations: [read] }
+  ])
 {
   id: ID!
   name: String!

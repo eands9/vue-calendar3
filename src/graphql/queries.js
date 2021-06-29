@@ -9,7 +9,6 @@ export const getTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -20,6 +19,36 @@ export const listTodos = /* GraphQL */ `
     $nextToken: String
   ) {
     listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const getTodoOpen = /* GraphQL */ `
+  query GetTodoOpen($id: ID!) {
+    getTodoOpen(id: $id) {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const listTodoOpens = /* GraphQL */ `
+  query ListTodoOpens(
+    $filter: ModelTodoOpenFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTodoOpens(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name

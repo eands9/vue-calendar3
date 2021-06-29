@@ -1,6 +1,51 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const createTodoOpen = /* GraphQL */ `
+  mutation CreateTodoOpen(
+    $input: CreateTodoOpenInput!
+    $condition: ModelTodoOpenConditionInput
+  ) {
+    createTodoOpen(input: $input, condition: $condition) {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const updateTodoOpen = /* GraphQL */ `
+  mutation UpdateTodoOpen(
+    $input: UpdateTodoOpenInput!
+    $condition: ModelTodoOpenConditionInput
+  ) {
+    updateTodoOpen(input: $input, condition: $condition) {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const deleteTodoOpen = /* GraphQL */ `
+  mutation DeleteTodoOpen(
+    $input: DeleteTodoOpenInput!
+    $condition: ModelTodoOpenConditionInput
+  ) {
+    deleteTodoOpen(input: $input, condition: $condition) {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
 export const createTodo = /* GraphQL */ `
   mutation CreateTodo(
     $input: CreateTodoInput!
@@ -12,7 +57,6 @@ export const createTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -27,7 +71,6 @@ export const updateTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -42,7 +85,6 @@ export const deleteTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
     }
   }
 `;
