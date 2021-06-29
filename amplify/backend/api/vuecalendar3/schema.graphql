@@ -1,4 +1,7 @@
-type Todo @model {
+type Todo @model @auth (rules: [
+  { allow: groups, groups: ["Admins"], mutations: [create, update, delete], queries: [list, get] },
+  { allow: owner } ])
+{
   id: ID!
   name: String!
   description: String

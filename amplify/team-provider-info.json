@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "vuecalendar357f1cfdf": {}
+      },
+      "function": {
+        "AdminQueries16f5560c": {
+          "deploymentBucketName": "amplify-vuecalendar3-dev-185342-deployment",
+          "s3Key": "amplify-builds/AdminQueries16f5560c-7a3337304d4552656c4c-build.zip"
+        }
       }
     }
   }
