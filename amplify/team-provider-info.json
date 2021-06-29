@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vuecalendar3-dev-185342-authRole",
+      "UnauthRoleArn": "arn:aws:iam::148299306225:role/amplify-vuecalendar3-dev-185342-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::148299306225:role/amplify-vuecalendar3-dev-185342-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vuecalendar3-dev-185342-deployment",
+      "UnauthRoleName": "amplify-vuecalendar3-dev-185342-unauthRole",
+      "StackName": "amplify-vuecalendar3-dev-185342",
+      "StackId": "arn:aws:cloudformation:us-east-1:148299306225:stack/amplify-vuecalendar3-dev-185342/12c610d0-d86c-11eb-b8c6-12417e4a260f",
+      "AmplifyAppId": "d3148tbovz2t7c"
+    },
+    "categories": {
+      "auth": {
+        "vuecalendar357f1cfdf": {}
+      }
+    }
+  }
+}
